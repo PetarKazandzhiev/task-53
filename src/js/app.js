@@ -10,12 +10,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
   //let price2 =  document.getElementsByClassName('.price')
 
-  console.log("price: "+price)
+  console.log("price: "+ price)
   //console.log("price2: "+price2)
 
   console.log("price.value: "+price.value)
   //console.log("price2.value: "+price2.value)
 
-  product.setAttribute('data-price', price.value)
+  product.createAttribute('data-price');
+  product.setAttribute('data-price', price.value);
 
 });
